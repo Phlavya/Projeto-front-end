@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FacilitaTasks | Dashboard</title>
+
+  <!-- Adição de Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/png/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/png/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/png/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/png/site.webmanifest">
+
+  <!-- Configurações css -->
+  <link rel="stylesheet" href="assets/dist/css/grid.css">
+  <!--grid system-->
+  <link rel="stylesheet" href="assets/dist/css/standards.css">
+  <!--css com variáveis-->
+  <link rel="stylesheet" href="assets/dist/css/style.css">
+  <!--css global-->
+  <link rel="stylesheet" href="assets/dist/css/dashboard.css">
+  <!--css tela login-->
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="row" id="dashboard">
+    <header>
+      <div class="user">
+        <img src="" alt="Foto usuário">
+        <div class="user-info">
+          <h6>Flávia Braga</h6>
+          <p>Front-end Developer</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="col col-dashboard-1">
+      <!-- BARRA DE NAVEÇÃO PRIMÁRIA | Início-->
+      <div class="navbar">
+
+        <img class="logo" src="assets/img/svg/icon-facilita-white.svg" alt="Ícone FacilitaTasks">
+
+        <div class="navbar-menu">
+
+          <a href="#">
+            <div class="navbar-item navbar-item-select">
+              <i class="far fa-chart-bar"></i>
+              <h6>Dashboard</h6>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="navbar-item">
+              <i class="far fa-check-circle"></i>
+              <h6>Tarefas</h6>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="navbar-item">
+              <i class="fas fa-cogs"></i>
+              <h6>Configurações</h6>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div> <!-- BARRA DE NAVEÇÃO 1 | Fim-->
+    <div class="col col-dashboard-2">
+      <!-- BARRA DE NAVEÇÃO 2 | Início-->
+      <div class="subbar">
+
+        <div class="subbar-menu">
+          <h5>Categorias</h5>
+
+          <div class="subbar-item subbar-item-select">
+            <a href="#">>&nbsp Todas</a>
+          </div>
+
+          <div class="subbar-item">
+            <a href="#">>&nbsp Urgentes</a>
+            <span class="urgent-number">1</span>
+          </div>
+
+          <div class="subbar-item">
+            <a href="#">>&nbsp Importantes</a>
+            <span class="important-number">2</span>
+          </div>
+
+          <div class="subbar-item">
+            <a href="#">>&nbsp Outros</a>
+          </div>
+
+          <div class="subbar-item">
+            <a href="#">>&nbsp Finalizados</a>
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- BARRA DE NAVEÇÃO SECUNDÁRIA | Fim-->
+    <div class="col col-dashboard-7">
+      <!-- ÁREA DE CONTEÚDO | Início-->
+      <div class="container">
+        <main class="board">
+          <div class="board-header">
+            <h1>Minhas Tarefas</h1>
+            <p>Olá <span>Flávia Braga</span>, você tem <span class="underline">4 tarefas</span> pendentes.</p>
+          </div>
+
+          <div class="board-search">
+            <form action="">
+
+              <i class="fas fa-search" aria-hidden="true"></i>
+              <input type="search" title="Digite o nome da tarefa" placeholder="Buscar Tarefas">
+
+            </form>
+          </div>
+
+          <div class="box-task">
+            <label class="check-area">
+              <input type="checkbox">
+              <span class="check"></span>
+            </label>
+            <h2>Criar projeto Vue.js</h2>
+            <div class="right">
+              <p class="important-text">Importante</p>
+              </p>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+          </div>
+
+          <div class="box-task">
+            <label class="check-area">
+              <input type="checkbox">
+              <span class="check"></span>
+            </label>
+            <h2>Montar telas HTML/CSS</h2>
+            <div class="right">
+              <p class="important-text">Importante</p>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+          </div>
+
+          <div class="box-task">
+            <label class="check-area">
+              <input type="checkbox">
+              <span class="check"></span>
+            </label>
+            <h2>Separar componentes</h2>
+            <div class="right">
+              <p class="check"></p>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+          </div>
+
+          <div class="box-task">
+            <label class="check-area">
+              <input type="checkbox">
+              <span class="check"></span>
+            </label>
+            <h2>Programar componentes</h2>
+            <div class="right">
+              <p class="check"></p>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div> <!-- ÁREA DE CONTEÚDO | Fim-->
+  </div>
+
+  <div class="add-box">
+    <a href="#" title="Adicionar tarefas"><i class="fas fa-plus"></i></a>
+  </div>
+
+</body>
+
+</html>
